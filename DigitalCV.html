@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Linking external CSS file -->
+    <title>A Digital CV</title>
+    <link rel="stylesheet" href="CVStylesheet.css" />
+    <!-- 
+  Attribution: Assistance and guidance in structuring and reviewing this HTML document were provided by ChatGPT, an AI language model. It was not used to write any code, but to review and check for errors and criteria fulfilment.
+-->
+  </head>
+  <body>
+    <!-- Header section, containing profile picture, name, and contact info. -->
+    <header>
+      <!-- Profile picture with alt text for accessability -->
+      <img
+        src="Images/portrait.png"
+        alt="Portrait of Spencer Davis"
+        height="200"
+      />
+      <!-- Main heading containing my name -->
+      <h1>Spencer Davis</h1>
+
+      <!-- Contact details -->
+      <p>
+        Email:
+        <a href="mailto:sdavis26@me.com">sdavis26@me.com</a>
+        <br />
+        Phone: (727) 692-0070
+      </p>
+    </header>
+
+    <!-- Main content area containing various sections of CV -->
+    <main>
+      <section>
+        <!-- Summary Section introducing my background and skills -->
+        <h2>Summary</h2>
+
+        <p>
+          Aspiring software engineer with a background in process engineering
+          and project management, currently enrolled in a 9-month
+          <b>Software Engineering Bootcamp</b>
+          at Springboard. Proficient in
+          <b>JavaScript</b>
+          ,
+          <b>React.js</b>
+          ,
+          <b>Node.js</b>
+          , and
+          <b>Python</b>
+          , with experience building scalable web applications. Known for a
+          strong foundation in
+          <b>problem-solving</b>
+          , cross-functional collaboration, and analytical thinking developed
+          during my engineering career at Corning Inc., where I led process
+          improvement initiatives and contributed to patent-pending innovations.
+        </p>
+        <p>
+          I thrive in environments that combine
+          <b>creativity</b>
+          with
+          <b>technical problem-solving</b>
+          and am excited to apply my skills to the development of innovative
+          software solutions. Actively building a portfolio of projects
+          showcasing full-stack development and looking forward to making an
+          impact in the tech industry.
+        </p>
+      </section>
+
+      <section>
+        <!-- Experience Section containing relevant job history -->
+        <h2>Experience</h2>
+
+        <!-- Each job is its own article -->
+        <article>
+          <h3>Process Engineer - Corning Inc.</h3>
+          <!-- Unordered list of key responsibilities -->
+          <ul>
+            <li>
+              Led cross-functional engineering teams in process improvement and
+              experimental design, resulting in a patent-pending innovation in
+              the optical fiber industry.
+            </li>
+            <li>
+              Spearheaded material research and procedural developments to
+              optimize manufacturing processes, increasing operational
+              efficiency by 15%.
+            </li>
+            <li>
+              Utilized data analysis tools to identify key bottlenecks and
+              improve process throughput for high-temperature equipment.
+            </li>
+            <li>
+              Managed project timelines and ensured on-time delivery for
+              critical milestones in collaboration with R&D and manufacturing
+              teams.
+            </li>
+            <li>
+              Documented technical procedures and trained team members on
+              updated methodologies, enhancing knowledge sharing across
+              departments.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Engineering Intern - Transitions Optical</h3>
+          <ul>
+            <li>
+              Developed and implemented a barcode organizational system for
+              tracking photochromic solutions used in lens production, improving
+              material traceability across global facilities.
+            </li>
+            <li>
+              Refurbished batch record programs, introducing auto-calculation
+              tools and enhancing the efficiency of production workflows.
+            </li>
+            <li>
+              Designed catalyst calculation programs and provided detailed batch
+              creation documentation, leading to more streamlined production
+              processes.
+            </li>
+            <li>
+              Mixed and tested photochromic solutions used in transition lenses,
+              ensuring high-quality standards in product development.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <!-- Education section with a table of details -->
+        <h2>Education</h2>
+
+        <!-- Wrapping the table in a div so I can control the layout -->
+        <div class="table-wrapper">
+          <!-- Table showcasing degrees and certifications, years attended, and fields of study -->
+          <table class="education-table">
+            <thead>
+              <tr>
+                <!-- Empty header for the first column -->
+                <th scope="col"></th>
+                <th scope="col">University of South Florida</th>
+                <th scope="col">Cornell University</th>
+                <th scope="col">Springboard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Years Attended</th>
+                <td>2009 - 2014</td>
+                <td>2014 - 2015</td>
+                <td>2024 - 2025</td>
+              </tr>
+              <tr>
+                <th scope="row">Degree / Certification</th>
+                <td>Bachelor of Science</td>
+                <td>Master of Engineering</td>
+                <td>Certificate of Completion</td>
+              </tr>
+              <tr>
+                <th scope="row">Field of Study</th>
+                <td>Chemical Engineering</td>
+                <td>Chemical Engineering</td>
+                <td>Software Engineering</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="Technologies">
+        <!-- Technologies Section divided into h3 categories -->
+        <h2>Technologies</h2>
+
+        <!-- Lists of technologies grouped by their application area -->
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML and CSS</li>
+          <li>JavaScript</li>
+          <li>DOM Manipulation using vanilla JavaScript and jQuery</li>
+          <li>Node.js and Express</li>
+          <li>Python and Flask</li>
+          <li>React and Redux</li>
+        </ul>
+
+        <h3>Database</h3>
+        <ul>
+          <li>SQL</li>
+          <li>PostgreSQL</li>
+          <li>Node-pg and SQLAlchemy</li>
+        </ul>
+
+        <h3>Testing</h3>
+        <ul>
+          <li>Unit testing with Jasmine</li>
+        </ul>
+
+        <h3>Other</h3>
+        <ul>
+          <li>AI Prompt Engineering</li>
+          <li>Command line</li>
+          <li>Git and GitHub</li>
+          <li>Object-oriented Programming</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- Projects Section -->
+        <h2>Projects</h2>
+
+        <!-- Each project is its own article -->
+        <article>
+          <h3>
+            Research Project: Molecular Interactions in Perovskite Solar Cells
+          </h3>
+          <ul>
+            <li>
+              <p>
+                Conducted advanced computational research on the interaction
+                mechanisms of Lead Iodide and Methylammonium Iodide in
+                perovskite solar cells, using Density Functional Theory (DFT) to
+                simulate and analyze reaction rates and energy barriers.
+              </p>
+            </li>
+            <li>
+              <p>
+                Investigated the role of solvents such as Dimethylformamide
+                (DMF) and Dimethyl Sulfoxide (DMSO) in the formation of
+                high-efficiency perovskite structures, focusing on optimizing
+                solvent interactions for enhanced cell stability and efficiency.
+              </p>
+            </li>
+            <li>
+              <p>
+                Developed optimized molecular models of MAI-PbI2 systems,
+                analyzing bonding energies and stepwise molecular interactions
+                at various approach angles, providing insights into solvent
+                engineering and material optimization.
+              </p>
+            </li>
+            <li>
+              <p>
+                Generated energy diagrams to understand the impact of solvent
+                ratios and bonding configurations, aiming to improve the
+                uniformity and efficiency of perovskite layers in photovoltaic
+                applications.
+              </p>
+            </li>
+            <li>
+              <p>
+                Collaborated with a multidisciplinary research team to apply
+                these findings to experimental solar cell fabrication,
+                contributing to the potential for cheaper, more efficient solar
+                energy solutions.
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Power Patch: Self-Heating Patch for Transdermal Drug Delivery</h3>
+
+          <ul>
+            <li>
+              <p>
+                Collaborated with a team of 4 engineers to design and develop a
+                self-heating transdermal patch that enhances drug delivery
+                through the skin. The patch utilizes sodium acetate tri-hydrate
+                for heat generation, which increases the diffusion rate of
+                water-soluble drugs into the bloodstream.
+              </p>
+            </li>
+            <li>
+              <p>
+                Engineered a phase-changing insulating layer made from
+                lauric-capric acid, which controls the rate of temperature
+                increase to ensure the safe delivery of drugs.
+              </p>
+            </li>
+            <li>
+              <p>
+                Developed a hollow nickel micro-needle array to bypass epidermal
+                resistance and facilitate effective drug delivery directly to
+                the bloodstream.
+              </p>
+            </li>
+            <li>
+              <p>
+                Incorporated a silver nanoparticle-laced adhesive layer to
+                maintain skin contact and prevent bacterial infections,
+                enhancing the safety and efficacy of the patch.
+              </p>
+            </li>
+            <li>
+              <p>
+                Utilized polyurethane and polyethylene for containment, ensuring
+                the patch’s flexibility and durability during use.
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Note about upcoming projects -->
+      <p>
+        <i>
+          More exciting projects are on the way as I progress through the
+          Springboard curriculum!
+        </i>
+      </p>
+    </main>
+    <!-- Main content ends here -->
+
+    <!-- Footer section with contact forms and links -->
+    <footer>
+      <!-- Contact form section with required fields -->
+      <h2>Contact Me:</h2>
+      <form action="#">
+        <!-- Name field -->
+        <label class="contact-name">
+          Name:
+          <input name="name" type="text" placeholder="John Smith" required />
+        </label>
+
+        <!-- Email Field -->
+        <label class="contact-email">
+          Email:
+          <input
+            name="email"
+            type="email"
+            placeholder="John@email.com"
+            required
+          />
+        </label>
+
+        <!-- Organization field -->
+        <label class="contact-organization">
+          Organization:
+          <input name="organization" type="text" placeholder="Business Inc." />
+        </label>
+
+        <!-- Reason for contact select box -->
+        <label class="contact-reason">
+          Reason for Contact:
+          <select name="reason">
+            <option value="">--Please select an option--</option>
+            <option value="job">Job Offer</option>
+            <option value="Inquiry">Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <!-- Preferred contact days checkbox -->
+        <fieldset class="contact-days" name="contactdays">
+          <legend>Preferred Contact Days:</legend>
+          <label>
+            <input type="checkbox" name="monday" />
+            Monday
+          </label>
+          <label>
+            <input type="checkbox" name="tuesday" />
+            Tuesday
+          </label>
+          <label>
+            <input type="checkbox" name="wednesday" />
+            Wednesday
+          </label>
+          <label>
+            <input type="checkbox" name="thursday" />
+            Thursday
+          </label>
+          <label>
+            <input type="checkbox" name="friday" />
+            Friday
+          </label>
+          <label>
+            <input type="checkbox" name="saturday" />
+            Saturday
+          </label>
+          <label>
+            <input type="checkbox" name="sunday" />
+            Sunday
+          </label>
+        </fieldset>
+        <!-- Message text area -->
+        <label class="contact-message">
+          Message:
+          <textarea
+            name="message"
+            cols="30"
+            rows="3"
+            placeholder="Please type your message..."
+          ></textarea>
+        </label>
+
+        <!-- Submit button -->
+        <div class="contact-button">
+          <button class="contact-submit" type="submit">Submit</button>
+        </div>
+      </form>
+
+      <!-- Additional connect links -->
+      <div>
+        <p>Connect with me to discuss more about software engineering!</p>
+
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/davisspencer/">LinkedIn</a>
+          </li>
+        </ul>
+        <p>
+          Learn more about my journey on
+          <a href="https://www.springboard.com">Springboard.</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer section ends here -->
+  </body>
+</html>

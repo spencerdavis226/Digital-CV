@@ -1,0 +1,289 @@
+/* 
+Universal selector: 
+Applies the box-sizing rule to all elements. 
+This makes padding and borders included in the width and height calculations.
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* 
+General body styles: 
+Sets a light background, default font family, padding, margin, and border for the entire document.
+*/
+body {
+  background-color: hsl(209, 100%, 95%);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid hsl(208, 100%, 22%);
+}
+
+/* 
+Header styles:
+Uses flexbox to align the portrait, name, and contact info horizontally.
+Padding adds space inside the header, and justify-content spaces out the items.
+*/
+header {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+/* Aligns contact info to bottom of header container */
+header p {
+  align-self: flex-end;
+}
+
+/* 
+Main heading (h1) styles: 
+Centers the name text both vertically and horizontally within the header. 
+The text shadow adds a subtle depth effect.
+*/
+h1 {
+  align-self: center;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 2px hsla(208, 100%, 22%, 0.428);
+}
+
+/* 
+Subheadings (h2) styles: 
+Larger font size and bold font weight for emphasis. 
+Also sets a dark color matching the border color for consistency.
+*/
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: hsl(208, 100%, 22%);
+}
+
+/* 
+Sub-subheadings (h3) styles: 
+Smaller than h2, but still bold to differentiate between sections.
+*/
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Adding space below h1 and h2 for visual seperation */
+h1,
+h2 {
+  padding-bottom: 0.7rem;
+}
+
+/* 
+List item styles (li):
+Adds space below list items in sections like Experience.
+*/
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* 
+Removing margin for list items in the Technologies section.
+This keeps the technology items tightly grouped.
+*/
+.Technologies li {
+  margin-bottom: 0;
+}
+
+/* 
+Styles for the profile image:
+Adds a border and rounds the image to create a circular avatar effect.
+*/
+img {
+  border-radius: 100px;
+  border: 1px solid hsl(208, 100%, 22%);
+  align-self: flex-start;
+}
+
+/* 
+Sections and footer:
+Adds consistent margin and padding to create space between content blocks.
+A border-top is applied to visually separate sections.
+*/
+main section,
+footer section,
+footer {
+  margin: 1rem 0;
+  border-top: 1px solid hsl(208, 100%, 22%);
+  padding-bottom: 1rem;
+}
+
+/* 
+Link styles:
+Removes the default underline and sets a custom color for all links.
+*/
+a {
+  text-decoration: none;
+  color: hsl(208, 100%, 45%);
+  transition: color 0.3s;
+}
+
+/* 
+Hover effect for links:
+Restores the underline when the user hovers over a link.
+*/
+a:hover {
+  text-decoration: underline;
+  color: hsl(208, 100%, 20%);
+}
+
+/* 
+Wrapper for the education table:
+Centers the table within the page using flexbox.
+*/
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+Table styles:
+Makes the table fill 80% of the page width and aligns text to the left.
+Table-layout fixed ensures all columns have a consistent width.
+*/
+table {
+  text-align: left;
+  table-layout: fixed;
+  width: 80%;
+}
+
+/* 
+Table cell styles:
+Aligns text to the bottom of cells for a more uniform appearance.
+*/
+table td,
+table th {
+  vertical-align: bottom;
+}
+
+/* 
+Form styles:
+Centers form elements using flexbox and adds space between form controls.
+*/
+form {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 
+Button styles:
+Sets a transition effect for the background and text color on hover.
+*/
+button {
+  background-color: white;
+  border-color: hsl(208, 100%, 22%);
+  color: hsl(208, 100%, 22%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Changes button color when hovering */
+button:hover {
+  background-color: hsl(208, 100%, 22%);
+  color: white;
+}
+
+/* 
+Input, textarea, and button styles:
+Sets padding, borders, and margin for consistent spacing and layout.
+*/
+input,
+textarea,
+button {
+  padding: 0.2rem;
+  border: 1px solid hsl(208, 100%, 22%);
+  margin-bottom: 0.5rem;
+}
+
+/* 
+Flexbox layout for footer form fields:
+Divides the form into 33% width sections for a balanced layout.
+*/
+.contact-name,
+.contact-organization,
+.contact-reason,
+.contact-email {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+}
+
+/* 
+Flexbox layout for contact days checkboxes:
+Ensures checkboxes are wrapped and evenly spaced within the form.
+*/
+.contact-days {
+  display: flex;
+  width: 33%;
+  flex-wrap: wrap;
+}
+
+/* Adds space between each checkbox label */
+.contact-days label {
+  padding: 5px;
+}
+
+/* 
+Message field styles:
+Aligns the message input field with the rest of the form.
+*/
+.contact-message {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+}
+
+/* 
+Submit button styles:
+Aligns the button to the right within the form.
+*/
+.contact-button {
+  display: flex;
+  width: 33%;
+  justify-content: flex-end;
+}
+
+/* 
+Mobile responsive styles:
+Applies when the screen width is 480px or smaller.
+*/
+@media (max-width: 480px) {
+  /* Wraps header elements (portrait, name, contact) on small screens */
+  header {
+    flex-wrap: wrap;
+  }
+
+  /* Shrinks the profile image for mobile display */
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Ensures the education table fits the screen width */
+  .education-table {
+    width: 100%;
+  }
+
+  /* Lowers the font size of the table so the view isnt too cramped */
+  .education-table th,
+  .education-table td {
+    font-size: 0.8em;
+  }
+
+  /* Adjusts form fields to take up the full width of the container */
+  .contact-name,
+  .contact-organization,
+  .contact-reason,
+  .contact-email,
+  .contact-days,
+  .contact-message,
+  .contact-button {
+    width: 100%;
+  }
+}
